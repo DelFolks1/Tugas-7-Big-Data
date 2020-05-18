@@ -26,7 +26,7 @@ Lalu kita jalankan componen Load Data yang terdiri dari beberapa node : <br>
 <img src="/tugas7bd/loaddata.jpg"><br>
 Node DB Table Creator berfungsi untuk membuat demo table pada hive dan node DB Loader berfungsi untuk meload table yang sudah dibuat<br>
 Hasil dari table yang sudah dibuat : <br>
-<img src="/tugasbd7/dbloader.jpg"><br>
+<img src="/tugas7bd/dbloader.jpg"><br>
 Lalu, selanjutnya dari metanode Load Data, ada node Hive To Spark yang mengubah hive menjadi spark. Beriku hasilnya :<br>
  <img src="/tugas7bd/hivetospark.jpg"><br>
   
