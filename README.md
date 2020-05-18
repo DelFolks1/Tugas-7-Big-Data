@@ -70,3 +70,16 @@ Pertama, kita akan menginput data dan menyimpan di memory sementara menggunakan 
      <img src="/tugas7bd/dayclassifier.jpg"><br>
      Lalu, menghitung rata-rata usage per jam. <br>
       <img src="/tugas7bd/byhour2.jpg"><br>
+Lalu, semuanya akan digabung dengan menggunakan Spark Joiner. Lalu, hasilnya akan diteruskan ke node selanjutnya dalam workflow. Berikut hasil tablenya : <br>
+ <img src="/tugas7bd/metanoderes.jpg"><br>
+ Selanjutnya, ada node Spark SQL Query. 
+  <img src="/tugas7bd/sparksql.jpg"><br>
+Kita akan menghitung persentase hari / minggu dan juga persentase segmen harian / hari. Berikut konfigurasinya : <br>
+ <img src="/tugas7bd/sparksqlconf.jpg"><br>
+ Hasilnya :<br>
+  <img src="/tugas7bd/sparksqlres.jpg"><br>
+  <h2>Evaluation </h2>
+   <img src="/tugas7bd/pca.jpg"><br>
+   Berikut adalah komponen dari metanode PCA, K-Means, Scatter Plot <br>
+    <img src="/tugas7bd/pcacomp.jpg"><br>
+  
