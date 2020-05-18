@@ -28,5 +28,16 @@ Node DB Table Creator berfungsi untuk membuat demo table pada hive dan node DB L
 Hasil dari table yang sudah dibuat : <br>
 <img src="/tugas7bd/dbloader.jpg"><br>
 Lalu, selanjutnya dari metanode Load Data, ada node Hive To Spark yang mengubah hive menjadi spark. Beriku hasilnya :<br>
- <img src="/tugas7bd/hivetospark.jpg"><br>
-  
+<img src="/tugas7bd/hivetospark.jpg"><br>
+<h2>Modelling</h2>
+<img src="/tugas7bd/modelling.jpg"><br>
+Selanjutnya adalah proses modelling dalam CRISP-DM. Kita akan menjalankan metanode Extract date-time attributes. Berikut adalah isi dari metanode Extract date-time attributes : <br>
+<img src="/tugas7bd/extractddate.jpg"><br>
+Ada 4 proses. Yang pertama adalah konversi enc_datetime. Berikut konfigurasi Spark SQL Querynya : <br>
+<img src="/tugas7bd/datetimeconversion.jpg"><br>
+Hasil dari konversi date time:<br>
+<img src="/tugas7bd/convresult.jpg"><br>
+Dari proses sebelumnya didapatkan kolom eventDate, kita akan mengekstrak tahun, bulan, minggu, hari dan jam dengan Spark SQL Query yang kedua. Berikut konfigurasi SQL nya : <br>
+ <img src="/tugas7bd/extract.jpg"><br>
+ Berikut hasil ekstraksinya : <br>
+  <img src="/tugas7bd/extractresult.jpg"><br>
