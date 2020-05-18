@@ -48,7 +48,25 @@ Berikut hasilnya:<br>
 Yang terakhir adalah pembagian kolom jam, konfigurasi query sqlnya :<br>
 <img src="/tugas7bd/hourconf.jpg"><br>
 Hour akan dibuat menjadi daySegment dan memiliki 5 nilai. Berikut hasilnya:<br>
- <img src="/tugas7bd/hourresult.jpg"><br>
- Berikutnya akan masuk ke metanode Aggregation and time series. Berikut komponennya: <br>
-  <img src="/tugas7bd/aggre.jpg">
-
+<img src="/tugas7bd/hourresult.jpg"><br>
+Berikutnya akan masuk ke metanode Aggregation and time series. Berikut komponennya: <br>
+<img src="/tugas7bd/aggre.jpg"><br>
+Pertama, kita akan menginput data dan menyimpan di memory sementara menggunakan node Persist Spark Dataframe/RDD.<br>
+ <img src="/tugas7bd/rdd.jpg"><br>
+ Lalu, dari dataset tersebut akan dihitung rata-rata penggunaannya per segment(tahun,hari,bulan, dan jam) menggunakan 3 node yaitu Spark GroupBy, Spark Pivot dan Spark Column Rename lalu semua akan digabungkan menggunakan Spark Joiner.<br>
+ Yang pertama, akan menghitung usage keseluruhan dan rata-rata usage per tahun.<br>
+  <img src="/tugas7bd/byyear.jpg"><br>
+  Lalu akan menghitung rata-rata usage per bulan<br>
+   <img src="/tugas7bd/bymonth.jpg"><br>
+ Lalu,akan menghitung rata-rata usage per minggu<br>
+  <img src="/tugas7bd/byweek.jpg"><br>
+  Lalu, akan menghitung rata-rata usage per hari dalam 1 minggu<br>
+   <img src="/tugas7bd/bydayofweek.jpg"><br>
+  Lalu, akan menghitung rata-rata usage per harian <br>
+   <img src="/tugas7bd/byday.jpg"><br>
+   Lalu, menghitung rata-rata usage per jam dalam 1 hari <br>
+    <img src="/tugas7bd/byhour.jpg"><br>
+    Lalu, menghitung rata-rata usage per klasifikasi hari (WE atau BD) <br>
+     <img src="/tugas7bd/dayclassifier.jpg"><br>
+     Lalu, menghitung rata-rata usage per jam. <br>
+      <img src="/tugas7bd/byhour2.jpg"><br>
