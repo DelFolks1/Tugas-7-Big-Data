@@ -38,6 +38,17 @@ Ada 4 proses. Yang pertama adalah konversi enc_datetime. Berikut konfigurasi Spa
 Hasil dari konversi date time:<br>
 <img src="/tugas7bd/convresult.jpg"><br>
 Dari proses sebelumnya didapatkan kolom eventDate, kita akan mengekstrak tahun, bulan, minggu, hari dan jam dengan Spark SQL Query yang kedua. Berikut konfigurasi SQL nya : <br>
- <img src="/tugas7bd/extract.jpg"><br>
- Berikut hasil ekstraksinya : <br>
-  <img src="/tugas7bd/extractresult.jpg"><br>
+<img src="/tugas7bd/extract.jpg"><br>
+Berikut hasil ekstraksinya : <br>
+<img src="/tugas7bd/extractresult.jpg"><br>
+Selanjutnya, akan ada pengklasifikasian dari kolom dayOfWeek.Jika Saturday dan Sunday maka memiliki nilai 'WE', selain dari itu akan bernilai 'BD'. berikut adalah konfigurasi SQLnya:<br>
+<img src="/tugas7bd/confday.jpg"><br>
+Berikut hasilnya:<br>
+<img src="/tugas7bd/dayresult.jpg"><br>
+Yang terakhir adalah pembagian kolom jam, konfigurasi query sqlnya :<br>
+<img src="/tugas7bd/hourconf.jpg"><br>
+Hour akan dibuat menjadi daySegment dan memiliki 5 nilai. Berikut hasilnya:<br>
+ <img src="/tugas7bd/hourresult.jpg"><br>
+ Berikutnya akan masuk ke metanode Aggregation and time series. Berikut komponennya: <br>
+  <img src="/tugas7bd/aggre1.jpg"><br>
+   <img src="/tugas7bd/aggre2.jpg"><br>
