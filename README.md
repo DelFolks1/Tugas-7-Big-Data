@@ -50,5 +50,5 @@ Yang terakhir adalah pembagian kolom jam, konfigurasi query sqlnya :<br>
 Hour akan dibuat menjadi daySegment dan memiliki 5 nilai. Berikut hasilnya:<br>
  <img src="/tugas7bd/hourresult.jpg"><br>
  Berikutnya akan masuk ke metanode Aggregation and time series. Berikut komponennya: <br>
-  <img src="/tugas7bd/aggre1.jpg">
-   <img src="/tugas7bd/aggre2.jpg"><br>
+  <img src="/tugas7bd/aggre.jpg">
+
