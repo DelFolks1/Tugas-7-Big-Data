@@ -82,4 +82,8 @@ Kita akan menghitung persentase hari / minggu dan juga persentase segmen harian 
    <img src="/tugas7bd/pca.jpg"><br>
    Berikut adalah komponen dari metanode PCA, K-Means, Scatter Plot <br>
     <img src="/tugas7bd/pcacomp.jpg"><br>
-  
+  Pada node Spark normalizer semua data kecuali ID, dinormalisasi menjadi range 0 - 1. Pada node setelah Denormalizer data dioutputkan menjadi 2 bentuk yaitu visualisasi dan data table yang diteruskan ke general workflow. Selanjutnya, data output tadi dimasukkan kembali ke Local Big Data Environment menggunakan 2 node, yaitu Spark to Hive untuk load menjadi Apache Hive dan Spark to Parquet untuk load menjadi HDFS.<br>
+Hasilnya adalah sebagai berikut : <br>
+<img src="/tugas7bd/pcares.jpg"><br>
+Pada tahap ini dilakukan perubahan data dari spark kembali mejadi hive serta menyimpan spark kedalam HDFS dalam bentuk parquet, hasil dari data tersebut adalah sebagai berikut<br>
+<img src="/tugas7bd/parquet.jpg"><br>
